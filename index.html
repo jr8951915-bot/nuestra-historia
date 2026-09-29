@@ -1,0 +1,2544 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nuestra historia ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         PANTALLA DE ACCESO
+    ========================== -->
+
+    <section id="login-screen" class="screen active">
+
+        <div class="login-content">
+
+            <span class="small-label">✦ SOLO PARA TI ✦</span>
+
+            <h1>
+                Hay un lugar<br>
+                que solo tú puedes abrir.
+            </h1>
+
+            <p>
+                Antes de comenzar,<br>
+                necesito comprobar que eres tú...
+            </p>
+
+            <div class="login-form">
+
+                <input
+                    type="text"
+                    id="name-input"
+                    placeholder="Tu nombre"
+                    autocomplete="off"
+                >
+
+                <input
+                    type="text"
+                    id="secret-input"
+                    placeholder="¿Dónde fue nuestro primer beso?"
+                    autocomplete="off"
+                >
+
+                <button id="login-button">
+                    ENTRAR ♥
+                </button>
+
+                <p id="login-error" class="error-message"></p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTENEDOR DE LA HISTORIA
+    ========================== -->
+
+    <main id="story" class="hidden">
+
+
+        <!-- =========================
+             PROGRESO
+        ========================== -->
+
+        <div class="progress-container">
+
+            <span id="chapter-counter">
+                CAPÍTULO 0 / 10
+            </span>
+
+            <div class="progress-bar">
+                <div id="progress"></div>
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             CAPÍTULO 0
+        ========================== -->
+
+        <section
+            id="chapter-0"
+            class="chapter active-chapter chapter-cinematic"
+        >
+
+            <div class="chapter-content">
+
+                <span class="chapter-number">
+                    CAPÍTULO 0
+                </span>
+
+                <h2>
+                    Donde empezó todo
+                </h2>
+
+                <p class="chapter-text">
+                    Antes de recordar todo lo que vivimos
+                    este último año, tenemos que volver
+                    por un momento al principio.
+                    <br><br>
+                    A ese momento que cambió todo.
+                </p>
+
+                <div class="memory-photo single-photo">
+                    <img
+                        src="assets/capitulo-0/inicio.jpeg"
+                        alt="Nuestro comienzo"
+                    >
+                </div>
+
+                <p class="photo-caption">
+                    Nuestro momento canónico. ❤️
+                </p>
+
+                <button
+                    class="continue-button"
+                    onclick="showQuestion(0)"
+                >
+                    CONTINUAR →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PREGUNTA CAPÍTULO 0
+        ========================== -->
+
+        <section
+            id="question-0"
+            class="question-screen hidden"
+        >
+
+            <div class="question-content">
+
+                <span class="small-label">
+                    ANTES DE CONTINUAR...
+                </span>
+
+                <h2>
+                    Hay algo que solo tú deberías recordar.
+                </h2>
+
+                <p>
+                    ¿Dónde fue nuestro primer beso?
+                </p>
+
+                <input
+                    type="text"
+                    id="answer-0"
+                    placeholder="Escribe tu respuesta..."
+                    autocomplete="off"
+                >
+
+                <button onclick="checkAnswer(0)">
+                    DESBLOQUEAR ♥
+                </button>
+
+                <p
+                    id="question-error-0"
+                    class="error-message"
+                ></p>
+
+            </div>
+
+        </section>
+
+<!-- ==========================================
+     CAPÍTULO 1 — MÚSICA & AVENTURAS
+     ========================================== -->
+
+<section id="chapter-1" class="chapter chapter-1 hidden">
+
+    <div class="chapter1-content">
+
+        <!-- Encabezado -->
+        <div class="chapter1-header">
+            <span class="chapter1-number">01</span>
+
+            <div class="chapter1-line"></div>
+
+            <span class="chapter1-label">
+                MÚSICA & AVENTURAS
+            </span>
+        </div>
+
+
+        <!-- Título -->
+        <h2 class="chapter1-title">
+            Un año para<br>
+            <span>vivirlo todo.</span>
+        </h2>
+
+
+        <!-- Frase -->
+        <p class="chapter1-intro">
+            Sabes que bueno fue haber iniciado este ultimo año con tantos recuerdos, para ambos fueron primeras veces de estas experiencias y ame profundamente vivirlas contigo.
+        </p>
+
+
+        <!-- ==========================================
+             RECUERDO 1 — RYAN CASTRO
+             ========================================== -->
+
+        <div class="memory memory-one">
+
+            <div class="memory-image">
+                <img
+                    src="assets/capitulo-1/foto1.jpeg"
+                    alt="Nuestro recuerdo"
+                >
+            </div>
+
+            <div class="memory-text">
+                <span>RECUERDO 01</span>
+
+                <h3>La música nos encontró.</h3>
+
+                <p>
+                    NUESTRO PRIMER CONCIERTO, QUE HAYA SIDO DE RYAN CASTRO FUE ESPECTACULAR, MAS AUN SABIENDO QUE ESCUCHAMOS ESA CANCION QUE DESCRIBE TODO LO QUE YO SIENTO POR TI.
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- ==========================================
+             RECUERDO 2 — JAIME DUQUE
+             ========================================== -->
+
+        <div class="memory memory-two">
+
+            <div class="memory-text">
+                <span>RECUERDO 02</span>
+
+                <h3>VIAJESITO CHECK</h3>
+
+                <p>
+                    PARA MI ESTE VIAJE AMOR, SIGINIFICO TODO, AME COMPARTIR ESE LUGAR TAN HERMOSO CONTIGO Y MAS SABIENDO LOQ EU SIGNIFICA PARA TI.
+                </p>
+            </div>
+
+            <div class="memory-image">
+                <img
+                    src="assets/capitulo-1/foto2.jpeg"
+                    alt="Nuestra aventura"
+                >
+            </div>
+
+        </div>
+
+
+        <!-- ==========================================
+             RECUERDO 3 — BLESD
+             ========================================== -->
+
+        <div class="memory memory-three">
+
+            <div class="memory-image">
+                <img
+                    src="assets/capitulo-1/foto3.jpeg"
+                    alt="Nuestro concierto"
+                >
+            </div>
+
+            <div class="memory-text">
+                <span>RECUERDO 03</span>
+
+                <h3>Y DESDE AHI NO PARAMOS CON CONCIERTOS</h3>
+
+                <p>
+                    UNA EXPERIENCIA NUEVA, UN LUGAR NUEVO, ESCUCHANDO MUSICA JUNTO A TI, PARA MI ES LO MEJOR QUE AHI.
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- ==========================================
+             FRASE FINAL
+             ========================================== -->
+
+        <div class="chapter1-ending">
+
+            <div class="sound-wave">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <p>
+                Y entre canciones, viajes y momentos
+                inesperados...
+            </p>
+
+            <h3>
+                apenas estábamos comenzando.
+            </h3>
+
+        </div>
+
+
+        <!-- Botón para ir a la pregunta -->
+        <button
+            class="chapter1-question-button"
+            onclick="showQuestion(1)"
+        >
+            SEGUIR CON LA HISTORIA →
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     PREGUNTA DEL CAPÍTULO 1
+     ========================================== -->
+
+<section id="question-1" class="question-screen hidden">
+
+    <div class="question-content">
+
+        <span class="question-label">
+            UNA ÚLTIMA COSA...
+        </span>
+
+        <h2>
+            COMO SE LLAMA LA CANCION DE RYAN QUE TE DEDIQUE?
+        </h2>
+
+        <p>
+            Una respuesta correcta y continuamos.
+        </p>
+
+        <input
+            type="text"
+            id="answer-1"
+            placeholder="Escribe tu respuesta..."
+            autocomplete="off"
+        >
+
+        <button onclick="checkAnswer(1)">
+            CONTINUAR →
+        </button>
+
+        <p
+            id="error-1"
+            class="error-message"
+        ></p>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     CAPÍTULO 2 — LAS PEQUEÑAS COSAS
+     ========================================== -->
+
+<section id="chapter-2" class="chapter chapter-2 hidden">
+
+    <div class="chapter2-content">
+
+        <!-- ENCABEZADO -->
+
+        <div class="chapter2-header">
+
+            <span class="chapter2-number">
+                02
+            </span>
+
+            <span class="chapter2-label">
+                LAS PEQUEÑAS COSAS
+            </span>
+
+        </div>
+
+
+        <!-- TÍTULO -->
+
+        <div class="chapter2-title">
+
+            <span>
+                No todo tuvo que ser
+            </span>
+
+            <h2>
+                extraordinario.
+            </h2>
+
+            <p>
+                Simplemente tubo que ser asi, cada momento y cada recuerdo ha sido asi genial y extraordinario.
+            </p>
+
+        </div>
+
+
+        <!-- ==========================================
+             RECUERDO 1 — CINE
+             ========================================== -->
+
+        <div class="little-memory little-memory-1">
+
+            <div class="little-photo">
+
+                <span class="memory-number">
+                    01
+                </span>
+
+                <img
+                    src="assets/capitulo-2/foto1.jpeg"
+                    alt="Nuestro recuerdo en el cine"
+                >
+
+            </div>
+
+            <div class="little-text">
+
+                <span>
+                    UNA DE TANTAS
+                </span>
+
+                <h3>
+                    EL CINE
+                </h3>
+
+                <p>
+                    Ver pelis y salir de un centro comercial a las 12 de la noche.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==========================================
+             RECUERDO 2 — MIGAO
+             ========================================== -->
+
+        <div class="little-memory little-memory-2">
+
+            <div class="little-text">
+
+                <span>
+                    MOMENTO #02
+                </span>
+
+                <h3>
+                    MIGAO
+                </h3>
+
+                <p>
+                    Esto ya es personal, no me puedo imaginar un migao sin ti.
+                </p>
+
+            </div>
+
+            <div class="little-photo">
+
+                <span class="memory-number">
+                    02
+                </span>
+
+                <img
+                    src="assets/capitulo-2/foto2.jpeg"
+                    alt="Nuestro momento comiendo migao"
+                >
+
+            </div>
+
+        </div>
+
+
+        <!-- ==========================================
+             FRASE CENTRAL
+             ========================================== -->
+
+        <div class="chapter2-quote">
+
+            <span>
+                Y ES QUE...
+            </span>
+
+            <h3>
+                mi amor contigo hasta lo más sencillo
+                terminó teniendo significado.
+            </h3>
+
+        </div>
+
+
+        <!-- ==========================================
+             RECUERDO 3 — CASA
+             ========================================== -->
+
+        <div class="little-memory little-memory-3">
+
+            <div class="little-photo">
+
+                <span class="memory-number">
+                    03
+                </span>
+
+                <img
+                    src="assets/capitulo-2/foto3.jpeg"
+                    alt="Momentos juntos en casa"
+                >
+
+            </div>
+
+            <div class="little-text">
+
+                <span>
+                    NUESTRO LUGAR
+                </span>
+
+                <h3>
+                    EN CASA
+                </h3>
+
+                <p>
+                   Podemos decir que estamos practicando nuestra convivencia para un futuro
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==========================================
+             RECUERDO 4 — NOCHES
+             ========================================== -->
+
+        <div class="little-memory little-memory-4">
+
+            <div class="little-photo">
+
+                <span class="memory-number">
+                    04
+                </span>
+
+                <img
+                    src="assets/capitulo-2/foto4.jpeg"
+                    alt="Una de nuestras noches juntos"
+                >
+
+            </div>
+
+            <div class="little-text">
+
+                <span>
+                    CUANDO EL DÍA TERMINABA
+                </span>
+
+                <h3>
+                    NUESTRAS NOCHES
+                </h3>
+
+                <p>
+                    Se hacen muy cortas lastimosamente pero siempre se recuerdan.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==========================================
+             RECUERDO 5 — COMIDA
+             ========================================== -->
+
+        <div class="little-memory little-memory-5">
+
+            <div class="little-text">
+
+                <span>
+                    OTRO PLAN
+                </span>
+
+                <h3>
+                    SALIR A COMER
+                </h3>
+
+                <p>
+                    En la heladeria de barrio, en el restaurante mas lujoso, en un parque, pero comer contigo alegra mi pancita y mi corazon.
+                </p>
+
+            </div>
+
+            <div class="little-photo">
+
+                <span class="memory-number">
+                    05
+                </span>
+
+                <img
+                    src="assets/capitulo-2/foto5.jpeg"
+                    alt="Una de nuestras salidas a comer"
+                >
+
+            </div>
+
+        </div>
+
+
+        <!-- ==========================================
+             RECUERDO 6 — CAMISAS
+             ========================================== -->
+
+        <div class="little-memory little-memory-6">
+
+            <div class="little-photo">
+
+                <span class="memory-number">
+                    06
+                </span>
+
+                <img
+                    src="assets/capitulo-2/foto6.jpeg"
+                    alt="Nuestras camisas"
+                >
+
+            </div>
+
+            <div class="little-text">
+
+                <span>
+                    UNA PEQUEÑA LOCURA
+                </span>
+
+                <h3>
+                    LAS CAMISAS
+                </h3>
+
+                <p>
+                    Desde aqui siento que siempre he convinado mi ropa contigo, y me encanta.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==========================================
+             CIERRE
+             ========================================== -->
+
+        <div class="chapter2-ending">
+
+            <div class="ending-line"></div>
+
+            <p>
+                Son momentos que valoro demasiado, son en nuestar vida cotidianos pero no dejan de ser importantes.
+            </p>
+
+            <h3>
+                Porque al final...
+            </h3>
+
+            <strong>
+                fueron las pequeñas cosas.
+            </strong>
+
+        </div>
+
+
+        <!-- BOTÓN -->
+
+        <button
+            class="chapter2-question-button"
+            onclick="showQuestion(2)"
+        >
+            HAY ALGO MÁS... →
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     PREGUNTA CAPÍTULO 2
+     ========================================== -->
+
+<section
+    id="question-2"
+    class="question-screen hidden"
+>
+
+    <div class="question-content">
+
+        <span class="question-label">
+            ANTES DE SEGUIR...
+        </span>
+
+        <h2>
+            Dime el plato tipico de la calera en la noche jsjsjsj
+        </h2>
+
+        <p>
+            Una respuesta correcta y continuamos.
+        </p>
+
+        <input
+            type="text"
+            id="answer-2"
+            placeholder="Escribe tu respuesta..."
+            autocomplete="off"
+        >
+
+        <button onclick="checkAnswer(2)">
+            CONTINUAR →
+        </button>
+
+        <p
+            id="error-2"
+            class="error-message"
+        ></p>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     CAPÍTULO 3 — ENTRAR EN NUESTRAS VIDAS
+     ========================================== -->
+
+<section id="chapter-3" class="chapter chapter-3 hidden">
+
+    <div class="chapter3-content">
+
+        <!-- ENCABEZADO -->
+        <div class="chapter3-header">
+            <span class="chapter3-number">03</span>
+            <span class="chapter3-label">ENTRAR EN NUESTRAS VIDAS</span>
+        </div>
+
+        <!-- INTRO -->
+        <div class="chapter3-intro">
+            <span>Y SIN DARNOS CUENTA...</span>
+
+            <h2>
+                empezamos a formar<br>
+                parte del mundo del otro.
+            </h2>
+
+            <p>
+                Te digo con honestidad que ha sido el mejor diciembre de mi vida, por momentos como estos.
+            </p>
+        </div>
+
+
+        <!-- ==================================
+             RECUERDO 01 — DÍA DE VELITAS
+             ================================== -->
+
+        <div class="chapter3-memory velitas-memory">
+
+            <div class="chapter3-photo">
+                <span class="photo-label">RECUERDO 01</span>
+
+                <img
+                    src="assets/capitulo-3/foto1.jpeg"
+                    alt="Nuestro primer Día de Velitas"
+                >
+            </div>
+
+            <div class="chapter3-memory-text">
+
+                <span>UNA NOCHE ESPECIAL</span>
+
+                <h3>
+                    DÍA DE VELITAS
+                </h3>
+
+                <p>
+                    Fue mi primer dia de velitas lejos de mi familia, fue raro lo admito, pero me di cuenta que estaba con otra parte de mi familia.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- TRANSICIÓN -->
+
+        <div class="chapter3-transition">
+
+            <span>POCO A POCO...</span>
+
+            <div class="transition-dot"></div>
+
+            <p>
+                Y mira no sabes lo que me alegra cumplir con tus deseos.
+            </p>
+
+        </div>
+
+
+        <!-- ==================================
+             RECUERDO 02 — MONSERRATE
+             ================================== -->
+
+        <div class="chapter3-memory monserrate-memory">
+
+            <div class="chapter3-memory-text">
+
+                <span>OTRA NOCHE PARA RECORDAR</span>
+
+                <h3>
+                    MONSERRATE
+                </h3>
+
+                <p>
+                    No se que brillaba mas mi amoor esa noche, tu sin lugar a duda.
+                </p>
+
+            </div>
+
+            <div class="chapter3-photo">
+
+                <span class="photo-label">RECUERDO 02</span>
+
+                <img
+                    src="assets/capitulo-3/foto2.jpeg"
+                    alt="Noche juntos en Monserrate"
+                >
+
+            </div>
+
+        </div>
+
+
+        <!-- FINAL DEL CAPÍTULO -->
+
+        <div class="chapter3-ending">
+
+            <span>Y ENTONCES...</span>
+
+            <h3>
+                SIGUE DANDOME ESE BRILLO Y ESA LUZ EN MI VIDA
+            </h3>
+
+            <p>
+                Sigamos con esta aventura.
+            </p>
+
+        </div>
+
+
+        <!-- BOTÓN -->
+
+        <button
+            class="chapter3-question-button"
+            onclick="showQuestion(3)"
+        >
+            HAY ALGO MÁS... →
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     PREGUNTA CAPÍTULO 3
+     ========================================== -->
+
+<section id="question-3" class="question-screen hidden">
+
+    <div class="question-content">
+
+        <span class="question-label">
+            ANTES DE CONTINUAR...
+        </span>
+
+        <h2>
+            De segura te acuerdas, que jugamos mauricio y yo en velitas?
+        </h2>
+
+        <p>
+            Una respuesta correcta y continuamos.
+        </p>
+
+        <input
+            type="text"
+            id="answer-3"
+            placeholder="Escribe tu respuesta..."
+            autocomplete="off"
+        >
+
+        <button onclick="checkAnswer(3)">
+            CONTINUAR →
+        </button>
+
+        <p
+            id="error-3"
+            class="error-message"
+        ></p>
+
+    </div>
+
+</section>
+<!-- ==========================================
+     CAPÍTULO 4 — A PESAR DE TODO
+     ========================================== -->
+
+<section id="chapter-4" class="chapter chapter-4 hidden">
+
+    <div class="chapter4-content">
+
+        <!-- ENCABEZADO -->
+
+        <div class="chapter4-header">
+            <span class="chapter4-number">04</span>
+            <span class="chapter4-label">A PESAR DE TODO</span>
+        </div>
+
+        <!-- INTRODUCCIÓN -->
+
+        <div class="chapter4-intro">
+
+            <span>HAY RECUERDOS QUE...</span>
+
+            <h2>
+                decir que son perfectos<br>
+                es quedarse corto
+            </h2>
+
+            <p>
+                Es una fecha, es un momento que no es por lo material si no por una tradicion que debe seguir, es ese sentimiento alegre y esa risa picara.
+            </p>
+
+        </div>
+
+        <!-- RECUERDO PRINCIPAL -->
+
+        <div class="chapter4-main-memory">
+
+           <div class="chapter4-video">
+
+    <span>UN RECUERDO PARA GUARDAR</span>
+
+    <video id="chapter4-video" controls playsinline>
+        <source src="assets/capitulo-4/video1.mp4" type="video/mp4">
+        Tu navegador no puede reproducir este video.
+    </video>
+
+</div>
+            <div class="chapter4-text">
+
+                <span>RECUERDO </span>
+
+                <h3>REGALITOS</h3>
+
+                <p>
+                    GRACIAS POR ESOS REGALITOS MI AMOOR, TU INTENCION HACE QUE SEAN PERFECTOS.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- FRASE CENTRAL -->
+
+        <div class="chapter4-letter">
+
+            <span>Y AUNQUE...</span>
+
+            <p>
+                NO ME TIENES QUE DAR NINGUN REGALO MI AMOOR PARA DEMOSTRARME TU AMOOR, SIEMPRE ME SORPRENDES Y ESE ES MI PORQUE.
+            </p>
+
+        </div>
+
+        <!-- SEGUNDO TEXTO -->
+
+        <div class="chapter4-ending">
+
+            <span>AL FINAL</span>
+
+            <h3>
+                TE AMO
+            </h3>
+
+            <p>
+                SIGAMOS CON ESTO
+            </p>
+
+        </div>
+
+        <!-- BOTÓN -->
+
+        <button
+            class="chapter4-question-button"
+            onclick="showQuestion(4)"
+        >
+            CONTINUAR CON LA HISTORIA →
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- PREGUNTA CAPÍTULO 4 -->
+
+<section id="question-4" class="question-screen hidden">
+
+    <div class="question-content">
+
+        <span class="question-label">
+            ANTES DE CONTINUAR...
+        </span>
+
+        <h2>
+         ¿Segun el video, que regalo estabas abriendo en ese momento?
+        </h2>
+
+        <p>
+            Una respuesta correcta y continuamos.
+        </p>
+
+        <input
+            type="text"
+            id="answer-4"
+            placeholder="Escribe tu respuesta..."
+            autocomplete="off"
+        >
+
+        <button onclick="checkAnswer(4)">
+            CONTINUAR →
+        </button>
+
+        <p id="error-4" class="error-message"></p>
+
+    </div>
+
+</section>
+<!-- ==========================================
+     CAPÍTULO 5 — VERTE CRECER
+     ========================================== -->
+
+<section id="chapter-5" class="chapter chapter-5 hidden">
+
+    <div class="chapter5-content">
+
+        <!-- ENCABEZADO -->
+
+        <div class="chapter5-header">
+
+            <span class="chapter5-number">05</span>
+
+            <div class="chapter5-line"></div>
+
+            <span class="chapter5-label">VERTE CRECER</span>
+
+        </div>
+
+
+        <!-- INTRODUCCIÓN -->
+
+        <div class="chapter5-intro">
+
+            <span>HAY MOMENTOS QUE...</span>
+
+            <h2>
+                No se tratan<br>
+                de llegar.
+            </h2>
+
+            <p>
+                Preciosa :3
+            </p>
+
+        </div>
+
+
+        <!-- FRASE CENTRAL -->
+
+        <div class="chapter5-statement">
+
+            <span>SINO DE</span>
+
+            <h3>
+                acompañar el proceso.
+            </h3>
+
+        </div>
+
+
+        <!-- RECUERDO PRINCIPAL -->
+
+        <div class="chapter5-memory">
+
+            <div class="chapter5-photo">
+
+                <span>RECUERDO 01</span>
+
+                <img
+                    src="assets/capitulo-5/foto1.jpeg"
+                    alt="Un momento importante para nosotros"
+                >
+
+            </div>
+
+            <div class="chapter5-text">
+
+                <span>UN PEQUEÑO PASO</span>
+
+                <h3>
+                    Tus logros 
+                </h3>
+
+                <p>
+                    Mientras yo este, siempre vas a tener a alguien que celebre tus logros, sean grandes o pequeños.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- SEGUNDA FOTO OPCIONAL -->
+
+        <div class="chapter5-second-memory">
+
+            <div class="chapter5-second-text">
+
+                <span>Y DESPUÉS...</span>
+
+                <p>
+                    Hazme compañero de tus momentos siempre, los celebrare como si fueran mios 
+                </p>
+
+            </div>
+
+            <div class="chapter5-second-photo">
+
+                <span>RECUERDO 02</span>
+
+                <img
+                    src="assets/capitulo-5/foto2.jpeg"
+                    alt="Otro momento de esta etapa"
+                >
+
+            </div>
+
+        </div>
+
+
+        <!-- FINAL -->
+
+        <div class="chapter5-ending">
+
+            <span>QUIZÁS ESO ES LO BONITO</span>
+
+            <h3>
+                No solo cumplir tus metas, sino tener con quien compartirlas.
+            </h3>
+
+            <p>
+                Sigue con tus compras ni niña grande :3
+            </p>
+
+        </div>
+
+
+        <!-- BOTÓN -->
+
+        <button
+            class="chapter5-question-button"
+            onclick="showQuestion(5)"
+        >
+            CONTINUAR CON LA HISTORIA →
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     PREGUNTA CAPÍTULO 5
+     ========================================== -->
+
+<section id="question-5" class="question-screen hidden">
+
+    <div class="question-content">
+
+        <span class="question-label">
+            ANTES DE CONTINUAR...
+        </span>
+
+        <h2>
+            Cual va a ser mi primera compra de adulto responsable?
+        </h2>
+
+        <p>
+            Una respuesta correcta y continuamos.
+        </p>
+
+        <input
+            type="text"
+            id="answer-5"
+            placeholder="Escribe tu respuesta..."
+            autocomplete="off"
+        >
+
+        <button onclick="checkAnswer(5)">
+            CONTINUAR →
+        </button>
+
+        <p id="error-5" class="error-message"></p>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     CAPÍTULO 6 — CELEBRARTE
+     ========================================== -->
+
+<section id="chapter-6" class="chapter chapter-6 hidden">
+
+    <div class="chapter6-content">
+
+        <!-- ENCABEZADO -->
+        <div class="chapter6-header">
+
+            <span class="chapter6-number">06</span>
+
+            <div class="chapter6-line"></div>
+
+            <span class="chapter6-label">
+                CELEBRARTE
+            </span>
+
+        </div>
+
+
+        <!-- INTRO -->
+        <div class="chapter6-intro">
+
+            <span>HAY MOMENTOS QUE...</span>
+
+            <h2>
+                Simplemente<br>
+                se celebran.
+            </h2>
+
+            <p>
+                Gracias por crear un dia hermoso en mi vida para recordar y celebrar.
+            </p>
+
+        </div>
+
+
+        <!-- FOTO 1 -->
+        <div class="chapter6-memory chapter6-memory-one">
+
+            <div class="chapter6-photo">
+
+                <span>06 / 01</span>
+
+                <img
+                    src="assets/capitulo-6/foto1.jpeg"
+                    alt="Recuerdo especial"
+                >
+
+            </div>
+
+            <div class="chapter6-memory-text">
+
+                <span>Tu cumple<span>
+
+                <p>
+                    Creo que cumpli algo que siempre quisiste y me alegro mucho verte ese dia asi de sonriente.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- FRASE CENTRAL -->
+        <div class="chapter6-center">
+
+            <span>Y SI ALGO APRENDÍ...</span>
+
+            <h3>
+                Es que eres quiero celebrarte siempre por todo lo alto tu cumpleaños
+            </h3>
+
+        </div>
+
+
+        <!-- FOTO 2 -->
+        <div class="chapter6-memory chapter6-memory-two">
+
+            <div class="chapter6-memory-text">
+
+                <span>Un pequeño regalito</span>
+
+                <p>
+                    Quise que te sintieras la compañia de todas esas personitas a las cuales nos importas demasiado.
+                </p>
+
+            </div>
+
+            <div class="chapter6-photo">
+
+                <span>06 / 02</span>
+
+                <img
+                    src="assets/capitulo-6/foto2.jpeg"
+                    alt="Otro recuerdo especial"
+                >
+
+            </div>
+
+        </div>
+
+
+        <!-- FOTO 3 -->
+        <div class="chapter6-final-photo">
+
+            <span>Un regalote :3</span>
+
+            <img
+                src="assets/capitulo-6/foto3.jpeg"
+                alt="Nuestro recuerdo"
+            >
+
+        </div>
+
+
+        <!-- CIERRE -->
+        <div class="chapter6-ending">
+
+            <span>AL FINAL</span>
+
+            <h3>
+                ESPERO TE HALLA ENCANTANDO TU CUMPLEÑOS
+            </h3>
+
+            <p>
+               NOS VEMOS EN EL SIGUIENTE :3
+            </p>
+
+        </div>
+
+
+        <!-- BOTÓN -->
+        <button
+            class="chapter6-question-button"
+            onclick="showQuestion(6)"
+        >
+            CONTINUAR CON LA HISTORIA →
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     PREGUNTA CAPÍTULO 6
+     ========================================== -->
+
+<section id="question-6" class="question-screen hidden">
+
+    <div class="question-content">
+
+        <span class="question-label">
+            ANTES DE CONTINUAR...
+        </span>
+
+        <h2>
+            A donde fuimos para tu compleaños?
+        </h2>
+
+        <p>
+            Una respuesta correcta y continuamos.
+        </p>
+
+        <input
+            type="text"
+            id="answer-6"
+            placeholder="Escribe tu respuesta..."
+            autocomplete="off"
+        >
+
+        <button onclick="checkAnswer(6)">
+            CONTINUAR →
+        </button>
+
+        <p id="error-6" class="error-message"></p>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     CAPÍTULO 7 — SIN PLANEARLO
+     ========================================== -->
+
+<section id="chapter-7" class="chapter chapter-7 hidden">
+
+    <div class="chapter7-content">
+
+        <!-- HEADER -->
+        <div class="chapter7-header">
+
+            <span class="chapter7-number">07</span>
+
+            <div class="chapter7-line"></div>
+
+            <span class="chapter7-label">
+                SIN PLANEARLO
+            </span>
+
+        </div>
+
+
+        <!-- INTRO -->
+        <div class="chapter7-intro">
+
+            <span>QUIZÁS LO MEJOR...</span>
+
+            <h2>
+                Fue no saber<br>
+                qué venía.
+            </h2>
+
+            <p>
+                DEJAME LLEVARTE A CONOCER TODO EL MUNDO MI AMOOOR
+
+            </p>
+
+        </div>
+
+
+        <!-- RUTA -->
+        <div class="chapter7-route">
+
+            <div class="route-line"></div>
+
+            <div class="route-point route-point-one">
+                <span>01</span>
+            </div>
+
+            <div class="route-point route-point-two">
+                <span>02</span>
+            </div>
+
+            <div class="route-point route-point-three">
+                <span>03</span>
+            </div>
+
+        </div>
+
+
+        <!-- RECUERDO 1 -->
+        <div class="chapter7-memory chapter7-memory-one">
+
+            <div class="chapter7-photo">
+
+                <span>RECUERDO / 01</span>
+
+                <img
+                    src="assets/capitulo-7/foto1.jpeg"
+                    alt="Primer recuerdo de nuestra aventura"
+                >
+
+            </div>
+
+            <div class="chapter7-text">
+
+                <span>PRIMERA PARADA</span>
+
+                <h3>
+                    PSICILAGO
+                </h3>
+
+                <p>
+                    La pase genail, no tengo que aportar nada mas, solo que te dije que vamos a volver solos :#
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- RECUERDO 2 -->
+        <div class="chapter7-memory chapter7-memory-two">
+
+            <div class="chapter7-text">
+
+                <span>Y ENTONCES...</span>
+
+                <p>
+                    Sigamos publeando, sigamos siendo espontaneos y si nos tenemos que emborrachar hagamoslo sin miedo, disfrutemos.
+                </p>
+
+            </div>
+
+            <div class="chapter7-photo">
+
+                <span>RECUERDO / 02</span>
+
+                <img
+                    src="assets/capitulo-7/foto2.jpeg"
+                    alt="Segundo recuerdo de nuestra aventura"
+                >
+
+            </div>
+
+        </div>
+
+
+        <!-- FRASE CENTRAL -->
+        <div class="chapter7-statement">
+
+            <span>AL FINAL</span>
+
+            <h3>
+                TU ERES Y SERAS MI COMPAÑERA DE VIAJE
+            </h3>
+
+        </div>
+
+
+        <!-- RECUERDO 3 -->
+        <div class="chapter7-final-memory">
+
+            <div class="chapter7-final-number">
+                03
+            </div>
+
+            <div class="chapter7-final-photo">
+
+                <img
+                    src="assets/capitulo-7/foto3.jpeg"
+                    alt="Último recuerdo de esta aventura"
+                >
+
+            </div>
+
+            <div class="chapter7-final-text">
+
+                <span>ÚLTIMA PARADA</span>
+
+                <p>
+                    Con mucho te acompañare a donnde sea cualquer lugar, siempre y cuando me ames y me quieras contigo.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CIERRE -->
+        <div class="chapter7-ending">
+
+            <span>Y QUIZÁS ESO SEA LO BONITO</span>
+
+            <h3>
+                SOLO VIAJAR
+            </h3>
+
+        </div>
+
+
+        <!-- BOTÓN -->
+        <button
+            class="chapter7-question-button"
+            onclick="showQuestion(7)"
+        >
+            CONTINUAR CON LA HISTORIA →
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     PREGUNTA CAPÍTULO 7 — SÍ / NO
+     ========================================== -->
+
+<section id="question-7" class="question-screen hidden">
+
+    <div class="question-content chapter7-question">
+
+        <span class="question-label">
+            UNA ÚLTIMA PREGUNTA...
+        </span>
+
+        <h2>
+            ¿VOLVERÍAS A VIVIR<br>
+            TODO ESTO CONMIGO?
+        </h2>
+
+        <p>
+            Solo hay dos respuestas.
+        </p>
+
+
+        <div class="chapter7-options">
+
+            <button
+                class="chapter7-option yes"
+                onclick="answerChapter7(true)"
+            >
+                SÍ
+            </button>
+
+            <button
+                class="chapter7-option no"
+                onclick="answerChapter7(false)"
+            >
+                NO
+            </button>
+
+        </div>
+
+
+        <p
+            id="chapter7-response"
+            class="chapter7-response"
+        ></p>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     CAPÍTULO 8 — EL QUE SE QUEDÓ
+     ========================================== -->
+
+<section id="chapter-8" class="chapter chapter-8 hidden">
+
+    <div class="chapter8-content">
+
+        <!-- INTRO -->
+        <div class="chapter8-intro">
+
+            <div class="chapter8-number">
+                08
+            </div>
+
+            <div class="chapter8-red-line"></div>
+
+            <span>
+                HAY COSAS QUE SE QUEDAN
+            </span>
+
+            <h2>
+                Para siempre.
+            </h2>
+
+            <p>
+                Tu sin dudar ya tienes una marca en mi corazon
+            </p>
+
+        </div>
+
+
+        <!-- PRIMERA FRASE -->
+        <div class="chapter8-statement">
+
+            <span>
+                Y ENTONCES...
+            </span>
+
+            <h3>
+                NO BASTO SOLO CON ESO, NOS MARCAMOS LITERAL :v
+            </h3>
+
+        </div>
+
+
+        <!-- PRIMERA FOTO -->
+        <div class="chapter8-memory">
+
+            <div class="chapter8-photo-one">
+
+                <span>
+                    EL MOMENTO
+                </span>
+
+                <img
+                    src="assets/capitulo-8/foto1.jpeg"
+                    alt="Nuestro recuerdo del tatuaje"
+                >
+
+            </div>
+
+            <div class="chapter8-memory-text">
+
+                <span>
+                    RECUERDO / 01
+                </span>
+
+                <h3>
+                    TATUAJE CHECK
+                </h3>
+
+                <p>
+                    Amor no sabes lo importante que es nuestro tatuaje para mi, significa muchas cosas y aunque no diga explicitamente mi nombre o cosas asi, nuestro significado importa mas, tiene mas peso.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- FRASE CENTRAL -->
+        <div class="chapter8-mark">
+
+            <div class="chapter8-mark-symbol">
+                +
+            </div>
+
+            <span>
+                UNA DECISIÓN
+            </span>
+
+            <h3>
+                IMPORTANTE, QUE SIN DUDA VOLVERIA A TOMAR
+            </h3>
+
+        </div>
+
+
+        <!-- SEGUNDA FOTO / REVEAL -->
+        <div class="chapter8-reveal">
+
+            <div class="chapter8-reveal-label">
+                <span>
+                    Y AHORA...
+                </span>
+
+                <strong>
+                    YA ES PARTE DE NOSOTROS.
+                </strong>
+            </div>
+
+            <div class="chapter8-photo-two">
+
+                <img
+                    src="assets/capitulo-8/foto2.jpeg"
+                    alt="Nuestro tatuaje"
+                >
+
+                <div class="chapter8-photo-frame"></div>
+
+            </div>
+
+        </div>
+
+
+        <!-- SIGNIFICADO -->
+        <div class="chapter8-meaning">
+
+            <span>
+                LO QUE SIGNIFICA
+            </span>
+
+            <h3>
+                GRACIAS POR ESE MOMENTO, Y DE VERDAD MUCHAS GRACIAS POR SIEMPRE DARLE UN SIGNIFICADO A MI VIDA.
+            </h3>
+
+            <p>
+                Y no solo por nuestro tatuaje me alegro mucho mucho mucho que tengas ese recuerdito de tu mami. 
+            </p>
+
+        </div>
+
+
+        <!-- CIERRE -->
+        <div class="chapter8-ending">
+
+            <div class="chapter8-final-line"></div>
+
+            <p>
+                TE AMO
+            </p>
+
+            <span>
+                08 / 10
+            </span>
+
+        </div>
+
+
+        <!-- BOTÓN -->
+        <button
+            class="chapter8-question-button"
+            onclick="showQuestion(8)"
+        >
+            CONTINUAR →
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     PREGUNTA CAPÍTULO 8
+     ========================================== -->
+
+<section id="question-8" class="question-screen hidden">
+
+    <div class="question-content chapter8-question">
+
+        <span class="question-label">
+            ANTES DE CONTINUAR...
+        </span>
+
+        <h2>
+            Nuestro tatuaje fue mi tatuaje numero?
+        </h2>
+
+        <p>
+            Una respuesta correcta y continuamos.
+        </p>
+
+        <input
+            type="text"
+            id="answer-8"
+            placeholder="Escribe tu respuesta..."
+            autocomplete="off"
+        >
+
+        <button onclick="checkAnswer(8)">
+            CONTINUAR →
+        </button>
+
+        <p
+            id="error-8"
+            class="error-message"
+        ></p>
+
+    </div>
+
+</section>
+
+
+<section id="chapter-9" class="chapter chapter-9 hidden">
+
+    <div class="chapter9-content">
+
+        <!-- INTRODUCCIÓN -->
+
+        <div class="chapter9-intro">
+
+            <span class="chapter9-number">09 / UNA CARTA</span>
+
+            <div class="chapter9-line"></div>
+
+            <h2>
+                Lo<br>
+                siento.
+            </h2>
+
+            <p>
+                Sabes es una fecha que es especial para ambos, es nuestro amor, pero mi amoor tambien esta en pedir perdon por esas miles de cosas que te han lastimado.
+            </p>
+
+        </div>
+
+
+        <!-- CARTA PRINCIPAL -->
+
+        <div class="chapter9-letter">
+
+            <span class="chapter9-label">
+                PARA TI
+            </span>
+
+            <h3>
+                Perdón por las veces
+                que no supe hacerlo mejor.
+            </h3>
+
+            <p>
+                Perdon por esas actitudes que te lastiman,
+                Perdon por no cuidarte y no estar pendiente de ti en ciertas ocasiones
+                Perdon por cada vez que me pierdo a mi y no se como amarte
+                Perdon por no entenderte, y no saber que decir 
+                
+                
+            </p>
+
+            <p>
+                Sabes he pensado y he visto nuestra relacion con el pasar de los años, y si
+                hemos cambiado, nuestro amor ha cambiado, y perdon por no tolerar y no saber que hacer frente a eso.
+
+            </p>
+
+        </div>
+
+
+        <!-- SECCIONES DE REFLEXIÓN -->
+
+        <div class="chapter9-reflection">
+
+            <div class="chapter9-reflection-block">
+
+                <span>01 / PERDÓN</span>
+
+                <h3>
+                    Por lo que hice
+                    y por lo que no hice.
+                </h3>
+
+                <p>
+                    Perdoname por que aveces por hacer mas, termino haciendo menos, aveces me paso de ansioso, y me ganan esas ganas de ayudar y de que todo tiene que estar bien siempre.
+                </p>
+
+            </div>
+
+
+            <div class="chapter9-reflection-block">
+
+                <span>02 / RECONOCER</span>
+
+                <h3>
+                    Sé que hubo cosas
+                    que pudieron lastimarte.
+                </h3>
+
+                <p>
+                    Te he fallado y estoy consiente de eso, aveces no te he dado el amor que te mereces y te lastime, y me lastime a mi mismo.
+                </p>
+
+            </div>
+
+
+            <div class="chapter9-reflection-block">
+
+                <span>03 / APRENDER</span>
+
+                <h3>
+                    Todavía estoy aprendiendo
+                    a ser mejor.
+                </h3>
+
+                <p>
+                    Y tu me has enseñado, me enseñaste a como quiero que me amen, me has enseñado a amarte y quiero seguir aprendiendo.
+                    Tambien me enseñaste algo mucho mas importante, en su momento nunca me habia sentido tan mal, y eso lo agradezo, te lo explico en el momento.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ÚNICA FOTOGRAFÍA -->
+
+        <div class="chapter9-photo">
+
+            <span>UN RECUERDO QUE CONSERVO</span>
+
+            <div class="chapter9-photo-frame">
+
+                <img
+                    src="assets/capitulo-9/foto1.jpeg"
+                    alt="Un recuerdo especial de nosotros"
+                >
+
+            </div>
+
+            <p>
+                Pongo este recuerdo aqui, porque es uno de los momentos donde mejor me he sentido en mi vida, incluyendo esos momentos donde no nos entendemos.
+            </p>
+
+        </div>
+
+
+        <!-- PARTE FINAL DE LA CARTA -->
+
+        <div class="chapter9-final-letter">
+
+            <span>Y AUNQUE NO PUEDA CAMBIAR EL PASADO...</span>
+
+            <h3>
+                Quiero seguir trabajando
+                en la persona que soy.
+            </h3>
+
+            <p>
+                No quiero ser perfeto, no quiero que nuestra relacion sea perfecta, quiero que seamos nosotros,
+                quiero verte, amarte, disfrutarte, odiarte en el buen sentido, quiero que sea nuestra relacion,
+                quiero que sea la manera mas pura de manifestar ese amor que ambos tenemos por dar.
+            </p>
+
+        </div>
+
+
+        <!-- CIERRE -->
+
+        <div class="chapter9-ending">
+
+            <div class="chapter9-ending-line"></div>
+
+            <p>
+                PERDON SOFIA, TE PEDIRE MIL VECES PERDON POR TODO LO QUE PASO Y POR TODO LO QUE PASE, ENSERIO ME IMPORTAS
+            </p>
+
+            <span>09 / 10</span>
+
+        </div>
+
+
+        <button
+            class="chapter9-question-button"
+            onclick="showQuestion(9)"
+        >
+            CONTINUAR →
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<section id="question-9" class="question-screen hidden">
+
+    <div class="question-content chapter9-question">
+
+        <span class="question-label">
+            ANTES DE CONTINUAR...
+        </span>
+
+        <h2>
+            ¿A QUÉ LUGAR<br>
+            VIAJAMOS JUNTOS?
+        </h2>
+
+        <p>
+            Elige una sola respuesta.
+        </p>
+
+        <div class="chapter9-options">
+
+            <button onclick="answerChapter9('san andres')">
+                SAN ANDRÉS
+            </button>
+
+            <button onclick="answerChapter9('santa marta')">
+                SANTA MARTA
+            </button>
+
+            <button onclick="answerChapter9('medellin')">
+                MEDELLÍN
+            </button>
+
+            <button onclick="answerChapter9('rio de janeiro')">
+                RÍO DE JANEIRO
+            </button>
+
+        </div>
+
+        <p
+            id="error-9"
+            class="error-message"
+        ></p>
+
+    </div>
+
+</section>
+
+
+
+<section id="chapter-10" class="chapter chapter-10 hidden">
+
+    <div class="chapter10-content">
+
+        <!-- =====================================
+             INTRODUCCIÓN
+        ====================================== -->
+
+        <div class="chapter10-intro">
+
+            <span class="chapter10-number">
+                10 / GRACIAS
+            </span>
+
+            <div class="chapter10-line"></div>
+
+            <h2>
+                Gracias<br>
+                por nosotros.
+            </h2>
+
+            <p>
+                Después de recordar tantos momentos,
+                de reconocer mis errores y de mirar
+                todo lo que hemos vivido, solo puedo
+                decirte una cosa...
+
+                Gracias por este año y por seguir
+                siendo parte de mi vida.
+            </p>
+
+        </div>
+
+
+        <!-- =====================================
+             COLLAGE DE CUATRO FOTOS
+        ====================================== -->
+
+        <div class="chapter10-collage">
+
+            <div class="chapter10-photo photo-a">
+
+                <img
+                    src="assets/capitulo-10/foto1.jpeg"
+                    alt="Un recuerdo especial de nosotros"
+                >
+
+            </div>
+
+            <div class="chapter10-photo photo-b">
+
+                <img
+                    src="assets/capitulo-10/foto2.jpeg"
+                    alt="Un momento juntos"
+                >
+
+            </div>
+
+            <div class="chapter10-photo photo-c">
+
+                <img
+                    src="assets/capitulo-10/foto3.jpeg"
+                    alt="Un recuerdo de nuestra relación"
+                >
+
+            </div>
+
+            <div class="chapter10-photo photo-d">
+
+                <img
+                    src="assets/capitulo-10/foto4.jpeg"
+                    alt="Otro recuerdo especial"
+                >
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================
+             AGRADECIMIENTO 01 — POR SU AMOR
+        ====================================== -->
+
+        <div class="chapter10-thanks">
+
+            <span>
+                01 / POR TU AMOR
+            </span>
+
+            <h3>
+                Tu amor lo es todo para mí.
+            </h3>
+
+            <p>
+                Gracias por cuidarme, gracias por
+                acompañarme y gracias por hacerme
+                sonreír con solo tu presencia.
+
+                Gracias por enseñarme lo que significa
+                amar perdidamente a alguien y por
+                permitirme experimentar un amor
+                tan especial contigo.
+            </p>
+
+        </div>
+
+
+        <!-- =====================================
+             AGRADECIMIENTO 02 — POR SU FORMA DE SER
+        ====================================== -->
+
+        <div class="chapter10-thanks chapter10-thanks-right">
+
+            <span>
+                02 / POR TU FORMA DE SER
+            </span>
+
+            <h3>
+                Gracias por ser tú,
+                incluso en los pequeños detalles.
+            </h3>
+
+            <p>
+                Gracias por tu paciencia, por cada
+                detalle que tienes conmigo, no solo
+                los materiales, sino también esos
+                momentos en los que estás pendiente
+                de mí y me haces sentir importante.
+
+                Y gracias por esa ternura tan tuya,
+                especialmente cada vez que pasa un
+                bebé y tu corazón se vuelve todavía
+                más dulce.
+            </p>
+
+        </div>
+
+
+        <!-- =====================================
+             AGRADECIMIENTO 03 — POR TODO EL AÑO
+        ====================================== -->
+
+        <div class="chapter10-highlight">
+
+            <span>
+                03 / POR TODO ESTE AÑO
+            </span>
+
+            <h3>
+                Gracias por un año maravilloso.
+            </h3>
+
+            <p>
+                Gracias por cada experiencia, cada
+                sonrisa, cada abrazo y cada recuerdo
+                que construimos juntos.
+
+                Ha sido un año lleno de momentos
+                que voy a guardar con mucho amor.
+
+                Feliz aniversario, mi amor.
+            </p>
+
+        </div>
+
+
+        <!-- =====================================
+             AGRADECIMIENTO 04 — MOMENTOS DIFÍCILES
+        ====================================== -->
+
+        <div class="chapter10-thanks">
+
+            <span>
+                04 / POR LO QUE APRENDIMOS
+            </span>
+
+            <h3>
+                Gracias por lo que también
+                nos enseñaron los momentos difíciles.
+            </h3>
+
+            <p>
+                Gracias por enseñarme que el amor
+                también requiere aprender, reconocer,
+                cambiar y crecer.
+
+                Hubo momentos que dolieron, pero
+                también me dejaron aprendizajes
+                importantes sobre mí, sobre ti y
+                sobre lo que significa amar de verdad.
+
+                Gracias por todo lo que hemos
+                aprendido en este camino.
+            </p>
+
+        </div>
+
+
+        <!-- =====================================
+             FRASE ESPECIAL — TU PORQUÉ
+        ====================================== -->
+
+        <div class="chapter10-why">
+
+            <span>
+                MI PORQUÉ
+            </span>
+
+            <div class="chapter10-why-line"></div>
+
+            <h3>
+                Tú eres<br>
+                mi porqué.
+            </h3>
+
+            <p>
+                Todos estos momentos son mi porqué.
+            </p>
+
+        </div>
+
+
+        <!-- =====================================
+             CARTA PRINCIPAL
+        ====================================== -->
+
+        <div class="chapter10-main-letter">
+
+            <span>
+                PARA TI
+            </span>
+
+            <h3>
+                Y entre todos esos momentos,
+                estás tú.
+            </h3>
+
+            <p>
+                Cada recuerdo, cada experiencia,
+                cada risa, cada abrazo y cada
+                dificultad forma parte de nuestra
+                historia.
+
+                Pero entre todos esos momentos,
+                hay algo que tengo muy claro:
+                tú eres mi porqué.
+            </p>
+
+            <p>
+                Gracias por ser parte de mi vida,
+                por tu amor y por todo lo que
+                hemos construido juntos.
+
+                Gracias por cada día compartido,
+                por cada detalle y por todo el
+                amor que me das.
+            </p>
+
+            <p>
+                Te sigo eligiendo, Sofía.
+            </p>
+
+        </div>
+
+
+        <!-- =====================================
+             PEQUEÑOS AGRADECIMIENTOS
+        ====================================== -->
+
+        <div class="chapter10-small-thanks">
+
+            <div>
+
+                <span>
+                    GRACIAS POR
+                </span>
+
+                <p>
+                    Tu forma de hacerme sonreír
+                    incluso sin darte cuenta.
+                </p>
+
+            </div>
+
+            <div>
+
+                <span>
+                    GRACIAS POR
+                </span>
+
+                <p>
+                    Cada detalle y cada momento
+                    en el que me haces sentir amado.
+                </p>
+
+            </div>
+
+            <div>
+
+                <span>
+                    GRACIAS POR
+                </span>
+
+                <p>
+                    Las experiencias nuevas
+                    que hemos vivido juntos.
+                </p>
+
+            </div>
+
+            <div>
+
+                <span>
+                    GRACIAS POR
+                </span>
+
+                <p>
+                    Seguir compartiendo tu vida
+                    y tu amor conmigo.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================
+             CIERRE DEL CAPÍTULO
+        ====================================== -->
+
+        <div class="chapter10-ending">
+
+            <div class="chapter10-ending-line"></div>
+
+            <h3>
+                Si pudiera volver a vivir
+                este año...
+            </h3>
+
+            <p>
+                Volvería a elegir cada momento
+                que me trajo hasta ti.
+
+                Y volvería a elegirte a ti.
+            </p>
+
+            <span>
+                10 / 10
+            </span>
+
+        </div>
+
+
+        <!-- =====================================
+             BOTÓN A LA PÁGINA FINAL
+        ====================================== -->
+
+        <button
+            class="chapter10-final-button"
+            onclick="goToFinalPage()"
+        >
+            CONTINUAR →
+        </button>
+
+    </div>
+
+</section>
+<!-- =========================
+     PÁGINA FINAL
+========================= -->
+
+<section id="final-page" class="final-page hidden">
+
+    <div class="final-hearts">
+        <span>❤️</span>
+        <span>💋</span>
+        <span>❤️</span>
+        <span>💋</span>
+        <span>❤️</span>
+        <span>💋</span>
+        <span>❤️</span>
+        <span>💋</span>
+    </div>
+
+    <div class="final-content">
+
+        <span class="final-small-text">
+            PARA NOSOTROS
+        </span>
+
+        <h1>
+            FELIZ<br>
+            ANIVERSARIO
+        </h1>
+
+        <div class="final-line"></div>
+
+        <p class="final-subtitle">
+            Este es mi detalle, junto a algo que ara que brilles mas y mas, asi como tu le das brillo a mi vida. 
+        </p>
+
+    </div>
+
+</section>
+
+    </main>
+
+
+   <!-- =========================
+     CONTROL DE MÚSICA
+========================= -->
+
+<button
+    id="music-control"
+    class="music-control"
+    type="button"
+    aria-label="Pausar música"
+>
+    ♫
+</button>
+
+
+<!-- =========================
+     AUDIO
+========================= -->
+
+<audio
+    id="background-music"
+    loop
+>
+    <source
+        src="assets/music/una-y-otra-vez.mp3"
+        type="audio/mpeg"
+    >
+</audio>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
